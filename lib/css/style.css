@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Baumans";
+  src: url("../fonts/Baumans.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Warnes";
+  src: url("../fonts/Warnes.ttf") format("truetype");
+}
+body {
+  background-color: #121821;
+  font-family: "Baumans", sans-serif;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

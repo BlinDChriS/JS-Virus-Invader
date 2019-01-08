@@ -1,0 +1,19 @@
+
+
+@font-face {
+	font-family: "Baumans";
+	src: url("../fonts/Baumans.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Warnes";
+	src: url("../fonts/Warnes.ttf") format("truetype");
+}
+
+$primary-color: #fff;
+$bg-color: #121821;
+
+body {
+    background-color: $bg-color;
+	font-family: "Baumans", sans-serif;
+    color: $primary-color;
+}
