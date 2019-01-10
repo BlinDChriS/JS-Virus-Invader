@@ -235,6 +235,12 @@ a:hover {
 }
 
 #displayZone {
+  font-family: "Baumans", sans-serif;
+  font-size: 30px;
+  font-weight: 20;
+  text-align: right;
+  color: #fff;
+  text-shadow: 0 0 2px #fff, 0 0 5px #0df, 0 0 10px #0df;
   border: 22px solid #d8d8d8;
   position: relative;
   padding-top: 75%;
