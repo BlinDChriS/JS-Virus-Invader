@@ -236,7 +236,7 @@ a:hover {
 
 #displayZone {
   font-family: "Baumans", sans-serif;
-  font-size: 30px;
+  font-size: 6rem;
   font-weight: 20;
   text-align: right;
   color: #fff;
@@ -245,7 +245,7 @@ a:hover {
   position: relative;
   padding-top: 75%;
   /* 4:3 Aspect Ratio */
-  padding: 10px;
+  padding: 30px;
   border-radius: 22px;
   background-image: url(../medias/bg.png);
   background-position: center center;
