@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Virus Invader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="L'envahisseur n'est pas toujours celui qu'on croit.">
     <meta http-equiv="Content-Type" content="text/html" />
     <meta name="author" content="Cafein Invaders: Adrien88 / ElMaestro84 / BlinDChriS">
@@ -14,21 +15,21 @@
     <link href="lib/css/style.css" rel="stylesheet">
 </head>
 
-<body>
-
-    <body class="introbg">
-        <div class="mainZone" id="mainZone">
-            <h2>Virus Invader</h2>
-            <div class="gameZone" id="displayZone">
+<body class="introbg">
+    <div class="mainZone" id="mainZone">
+        <h2>Virus Invader</h2>
+        <div class="gameZone" id="displayZone">
+            <img class="fit" src="lib/medias/examplepng.png">
+            <div class="score" id="scoreZone">
+                <h3>Score: 100</h3>
             </div>
         </div>
-        </div>
+    </div>
+    </div>
+    <!--============================== GAME script ==============================-->
+    <script src="lib/js/core.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js'></script>
 
-        <!-- ==========================================================================
-    GAME script
-   ==========================================================================-->
-        <script src="lib/js/core.js"></script>
-
-    </body>
+</body>
 
 </html>

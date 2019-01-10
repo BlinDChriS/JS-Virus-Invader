@@ -44,6 +44,10 @@ p {
   font-size: 2rem;
 }
 
+a {
+  color: #fff;
+}
+
 h1 {
   font-size: 9rem;
   font-weight: 100;
@@ -158,8 +162,8 @@ h4 {
   }
 }
 a:hover {
-  color: #121821;
   text-decoration: none;
+  color: #0df;
 }
 
 /* H1 H2 H4 animation neon */
@@ -218,6 +222,9 @@ a:hover {
 
 .button:hover {
   background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  box-shadow: 0 9px #999;
 }
 
 .button:active {
@@ -236,7 +243,7 @@ a:hover {
 
 #displayZone {
   font-family: "Baumans", sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 20;
   text-align: right;
   color: #fff;
@@ -250,6 +257,12 @@ a:hover {
   background-image: url(../medias/bg.png);
   background-position: center center;
   background-size: contain;
+  height: 85vh;
+  width: 120vh;
+}
+
+#displayZone:hover {
+  color: #fff;
 }
 
 .center {
@@ -273,7 +286,7 @@ a:hover {
 }
 .fit {
   width: 100vh;
-  max-height: 75vh;
+  max-height: 100vh;
   margin: auto;
 }
 
