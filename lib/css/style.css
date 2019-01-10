@@ -34,6 +34,10 @@ body {
   justify-content: center;
 }
 
+#bg {
+  background: #121821 url(../medias/titlebg.png) center fixed no-repeat;
+}
+
 p {
   font-family: "Baumans", sans-serif;
   color: #fff;
@@ -41,7 +45,7 @@ p {
 }
 
 h1 {
-  font-size: 10rem;
+  font-size: 9rem;
   font-weight: 100;
   font-style: normal;
   color: #fff;
@@ -56,6 +60,16 @@ h1 {
 @media screen and (max-width: 990px) {
   h1 {
     font-size: 7em;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 542px) {
+  h1 {
+    font-size: 5em;
   }
 }
 h1::-moz-selection {
@@ -119,7 +133,7 @@ h4 {
   margin-right: 480px;
   text-transform: uppercase;
   display: inline-block;
-  margin-top: 230px;
+  margin-top: 18vh;
   margin-bottom: -10px;
   text-shadow: 2px 2px 4px #07c;
   animation: youare 1.5s infinite alternate;
@@ -129,6 +143,18 @@ h4 {
   h4 {
     font-size: 2em;
     margin-right: 380px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 1.5em;
+    margin-right: 340px;
+  }
+}
+@media screen and (max-width: 540px) {
+  h4 {
+    font-size: 1.2em;
+    margin-right: 310px;
   }
 }
 a:hover {
@@ -175,8 +201,8 @@ a:hover {
 /* ===================================== */
 .button {
   display: inline-block;
-  padding: 15px 80px;
-  margin: 60px;
+  padding: 15px 50px;
+  margin: 5vh;
   font-size: 34px;
   font-weight: bold;
   cursor: pointer;
@@ -191,7 +217,7 @@ a:hover {
 }
 
 .button:hover {
-  background-color: #d0d0d0;
+  background-color: #fff;
 }
 
 .button:active {
@@ -246,10 +272,20 @@ a:hover {
 }
 
 #footer {
-  margin-top: 80px;
   font-family: "Baumans", sans-serif;
   color: #fff;
   font-size: 3rem;
+}
+
+@media screen and (max-width: 990px) {
+  #footer {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #footer {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

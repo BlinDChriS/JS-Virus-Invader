@@ -45,11 +45,15 @@ $scorecolor: 0 0 2px #fff,
 /* ===================================== */
 
 body {
-    background: $bg-color;
+	background: $bg-color;
 	font-family: "Baumans", sans-serif;
 	color: $first-color;
 	display: flex;
 	justify-content: center;
+}
+
+#bg {
+	background: $bg-color url(../medias/titlebg.png) center fixed no-repeat;
 }
 
 p {
@@ -59,12 +63,12 @@ p {
 }
 
 h1 {
-	font-size: 10rem;
+	font-size: 9rem;
 	font-weight: 100;
 	font-style: normal;
-	color: #fff;
+	color: $first-color;
 	padding: 1.5rem 4rem;
-	border: 0.4rem solid #fff;
+	border: 0.4rem solid $first-color;
 	border-radius: 2rem;
 	text-transform: uppercase;
 	animation: flicker 1.5s infinite alternate;
@@ -73,9 +77,22 @@ h1 {
 
 @media screen and (max-width: 990px) {
 
-    h1 {
-        font-size: 7em;
-    }
+	h1 {
+		font-size: 7em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 6rem;
+	}
+}
+
+@media screen and (max-width: 542px) {
+
+	h1 {
+		font-size: 5em;
+	}
 }
 
 
@@ -97,9 +114,9 @@ h2 {
 	font-size: 3rem;
 	font-weight: 100;
 	font-style: normal;
-	color: #fff;
+	color: $first-color;
 	padding: 0.5rem 1.5rem;
-	border: 0.3rem solid #fff;
+	border: 0.3rem solid $first-color;
 	border-radius: 0.8rem;
 	text-transform: uppercase;
 	animation: fulllight 1.5s infinite alternate;
@@ -140,7 +157,7 @@ h4 {
 	margin-right: 480px;
 	text-transform: uppercase;
 	display: inline-block;
-	margin-top: 230px;
+	margin-top: 18vh;
 	margin-bottom: -10px;
 	text-shadow: 2px 2px 4px #07c;
 	animation: youare 1.5s infinite alternate;
@@ -148,15 +165,31 @@ h4 {
 
 @media screen and (max-width: 990px) {
 
-    h4 {
-        font-size: 2em;
+	h4 {
+		font-size: 2em;
 		margin-right: 380px;
-    }
+	}
 }
 
-a:hover	{
-color: $buttoncolor;
-text-decoration: none;
+@media screen and (max-width: 768px) {
+
+	h4 {
+		font-size: 1.5em;
+		margin-right: 340px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+
+	h4 {
+		font-size: 1.2em;
+		margin-right: 310px;
+	}
+}
+
+a:hover {
+	color: $buttoncolor;
+	text-decoration: none;
 }
 
 /* H1 H2 H4 animation neon */
@@ -232,7 +265,7 @@ text-decoration: none;
 			-0.1rem -0.1rem 0.1rem #06c,
 			0.1rem 0.1rem 0.5rem #06c,
 			0 0 0.5rem#06c,
-			0 0 1rem #06c,;
+			0 0 1rem #06c, ;
 	}
 }
 
@@ -250,8 +283,8 @@ text-decoration: none;
 
 .button {
 	display: inline-block;
-	padding: 15px 80px;
-	margin: 60px;
+	padding: 15px 50px;
+	margin: 5vh;
 	font-size: 34px;
 	font-weight: bold;
 	cursor: pointer;
@@ -263,15 +296,17 @@ text-decoration: none;
 	border: none;
 	border-radius: 10px;
 	box-shadow: 0 9px #999;
-  }
-  
-  .button:hover {background-color: #d0d0d0}
-  
-  .button:active {
+}
+
+.button:hover {
+	background-color: $first-color
+}
+
+.button:active {
 	background-color: #d0d0d0;
 	box-shadow: 0 5px #666;
 	transform: translateY(4px);
-  }
+}
 
 /* ===================================== */
 /* =====        Display divs       ===== */
@@ -295,31 +330,46 @@ text-decoration: none;
 }
 
 .center {
-    text-align:center;
+	text-align: center;
 }
 
 .introbg {
-	background: $bg-color url(../medias/titlebg.png) center fixed no-repeat ;
+	background: $bg-color url(../medias/titlebg.png) center fixed no-repeat;
 	margin: auto;
 	position: absolute;
-	top: 0px; left: 0; bottom: 0; right: 0;
-  }
+	top: 0px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
 
-  
+
 @media screen and (max-width: 990px) {
 	.introbg {
-	background-size: 100vh;
-} }
+		background-size: 100vh;
+	}
+}
 
-  .fit {
+.fit {
 	width: 100vh;
 	max-height: 75vh;
 	margin: auto;
 }
 
 #footer {
-	margin-top: 80px;
 	font-family: "Baumans", sans-serif;
 	color: $first-color;
 	font-size: 3rem;
+}
+
+@media screen and (max-width: 990px) {
+	#footer {
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#footer {
+		font-size: 2rem;
+	}
 }
