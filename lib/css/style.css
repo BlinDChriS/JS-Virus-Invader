@@ -38,6 +38,10 @@ body {
   background: #121821 url(../medias/titlebg.png) center fixed no-repeat;
 }
 
+#bggame {
+  background: #121821 url(../medias/bggame.jpg) center fixed no-repeat;
+}
+
 p {
   font-family: "Baumans", sans-serif;
   color: #fff;
@@ -59,6 +63,7 @@ h1 {
   text-transform: uppercase;
   animation: flicker 1.5s infinite alternate;
   display: inline-block;
+  margin-top: 0px;
 }
 
 @media screen and (max-width: 990px) {
@@ -101,7 +106,9 @@ h2 {
   text-transform: uppercase;
   animation: fulllight 1.5s infinite alternate;
   display: inline-block;
+  margin-top: 15px;
   margin-bottom: 15px;
+  position: absolute;
 }
 
 h2::-moz-selection {
@@ -133,32 +140,30 @@ h4 {
   font-weight: 100;
   font-style: normal;
   color: #d8d8d8;
-  padding: 15px;
-  margin-right: 480px;
-  text-transform: uppercase;
   display: inline-block;
-  margin-top: 18vh;
-  margin-bottom: -10px;
+  text-transform: uppercase;
   text-shadow: 2px 2px 4px #07c;
   animation: youare 1.5s infinite alternate;
+  margin-bottom: 0px;
+  margin-right: 480px;
 }
 
 @media screen and (max-width: 990px) {
   h4 {
     font-size: 2em;
-    margin-right: 380px;
+    margin-right: 420px;
   }
 }
 @media screen and (max-width: 768px) {
   h4 {
     font-size: 1.5em;
-    margin-right: 340px;
+    margin-right: 380px;
   }
 }
 @media screen and (max-width: 540px) {
   h4 {
     font-size: 1.2em;
-    margin-right: 310px;
+    margin-right: 330px;
   }
 }
 a:hover {
@@ -259,16 +264,13 @@ a:hover {
   color: #fff;
   text-shadow: 0 0 2px #fff, 0 0 5px #0df, 0 0 10px #0df;
   border: 22px solid #d8d8d8;
-  position: relative;
-  padding-top: 75%;
-  /* 4:3 Aspect Ratio */
-  padding: 30px;
   border-radius: 22px;
   background-image: url(../medias/bg.png);
   background-position: center center;
-  background-size: contain;
-  height: 650px;
-  width: 950px;
+  background-size: cover;
+  margin-top: 80px;
+  width: 70%;
+  max-height: 100vh;
 }
 
 #displayZone:hover {
@@ -283,7 +285,8 @@ a:hover {
   background: #121821 url(../medias/titlebg.png) center fixed no-repeat;
   margin: auto;
   position: absolute;
-  top: 0px;
+  padding-top: 15%;
+  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
